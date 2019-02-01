@@ -1,8 +1,386 @@
-.highlight-blue {
-  margin-top:80px;
-}
-
 .img-fluid {
   font-size:100px;
+}
+
+/*   Navigation-clean-search   */
+.haut {
+  background: rgba(255,77,0,0.5);
+  padding-top:.75rem;
+  padding-bottom:.75rem;
+  color:#333;
+  border-radius:0;
+  box-shadow:none;
+  border:none;
+  margin-bottom:0;
+}
+
+@media (min-width:768px) {
+  .haut {
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+}
+
+.haut .navbar-brand {
+  font-weight:bold;
+  color:inherit;
+}
+
+.haut .navbar-brand:hover {
+  color:#222;
+}
+
+.haut .navbar-toggler {
+  border-color:#ddd;
+}
+
+.haut .navbar-toggler:hover, .haut .navbar-toggler:focus {
+  background:none;
+}
+
+.haut .navbar-toggler {
+  color:#888;
+}
+
+.haut .navbar-collapse, .haut .form-inline {
+  border-top-color:#ddd;
+}
+
+.haut .navbar-nav a.active, .haut .navbar-nav > .show > a {
+  background:none;
+  box-shadow:none;
+}
+
+.haut.navbar-light .navbar-nav a.active, .haut.navbar-light .navbar-nav a.active:focus, .haut.navbar-light .navbar-nav a.active:hover {
+  color:#8f8f8f;
+  box-shadow:none;
+  background:none;
+  pointer-events:none;
+}
+
+.haut.navbar .navbar-nav .nav-link {
+  padding-left:18px;
+  padding-right:18px;
+}
+
+.haut.navbar-light .navbar-nav .nav-link {
+  color:#465765;
+}
+
+.haut.navbar-light .navbar-nav .nav-link:focus, .haut.navbar-light .navbar-nav .nav-link:hover {
+  color:#37434d !important;
+  background-color:transparent;
+}
+
+.haut .action-button, .navigation-clean-button .action-button:active {
+  background:#56c6c6;
+  border-radius:20px;
+  font-size:inherit;
+  color:#fff !important;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:8px 20px;
+  transition:background-color 0.25s;
+}
+
+.haut .action-button:hover, .haut .action-button:focus {
+  background:#66d7d7;
+}
+
+.haut .form-inline label {
+  color:#ccc;
+}
+
+.haut .form-inline .search-field {
+  background:none;
+  border:none;
+  border-bottom:1px solid transparent;
+  border-radius:0;
+  color:#ccc;
+  box-shadow:none;
+  transition:border-bottom-color 0.3s;
+}
+
+@media (max-width:767px) {
+  .haut .form-inline .search-field {
+    display:inline-block;
+    width:80%;
+  }
+}
+
+.haut .form-inline .search-field:focus {
+  border-bottom:1px solid #ccc;
+}
+
+/*   home   */
+#home {
+  color:#fff;
+  /*background-color:#1e6add;*/
+  padding:50px 0;
+  margin-top:70px;
+  background:url(../../assets/img/main.jpg);
+}
+
+#home p {
+  color:#c4d5ef;
+  line-height:1.5;
+}
+
+#home h2 {
+  font-weight:normal;
+  margin-bottom:25px;
+  line-height:1.5;
+  padding-top:0;
+  margin-top:0;
+  color:inherit;
+}
+
+#home .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 25px;
+}
+
+#home .buttons {
+  text-align:center;
+}
+
+#home .buttons .btn {
+  padding:16px 32px;
+  margin:6px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+}
+
+#home .buttons .btn:hover {
+  opacity:1;
+}
+
+#home .buttons .btn:active {
+  transform:translateY(1px);
+}
+
+#home .buttons .btn-primary, .home .buttons .btn-primary:active {
+  border:2px solid rgba(255,255,255,0.7);
+  border-radius:6px;
+  color:#ebeff1;
+  box-shadow:none;
+  text-shadow:none;
+  padding:14px 24px;
+  background:transparent;
+  transition:background-color 0.25s;
+}
+
+
+/*  plan  */
+#plan {
+  color:#313437;
+  background-color:#fff;
+  margin-bottom: 20px;
+}
+
+#plan p {
+  color:#7d8285;
+}
+
+#plan h3 {
+  font-weight:bold;
+  margin-bottom:10px;
+  padding-top:10px;
+  color:inherit;
+}
+
+
+
+@media (max-width:767px) {
+  .plan h3 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+#plan .articles {
+  padding-bottom:10px;
+}
+
+#plan .item {
+  padding-top:50px;
+  min-height:300px;
+  text-align:center;
+}
+
+#plan .item .name {
+  font-weight:bold;
+  font-size:16px;
+  margin-top:20px;
+  color:inherit;
+}
+
+#plan .item .description {
+  font-size:14px;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+#plan .item .action {
+  font-size:24px;
+  width:24px;
+  margin:22px auto 0;
+  line-height:1;
+  display:block;
+  color:#4f86c3;
+  opacity:0.85;
+  transition:opacity 0.2s;
+  text-decoration:none;
+}
+
+#plan .item .action:hover {
+  opacity:1;
+}
+
+/*   lieux   */
+#lieux .swiper-slide {
+  height:500px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+#lieux .swiper-button-next, .lieux .swiper-button-prev {
+  width:50px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+@media (max-width:767px) {
+  #lieux .swiper-button-next, .lieux .swiper-button-prev {
+    display:none;
+  }
+}
+
+@media (max-width:767px) {
+  #lieux .swiper-slide {
+    height:360px;
+  }
+}
+
+
+/*   contact   */
+#contact {
+  /*background:#f1f7fc;*/
+  /*padding:80px 0;*/
+}
+
+@media (max-width:767px) {
+  #contact {
+    padding:20px 0;
+  }
+}
+
+#contact form {
+  max-width:480px;
+  width:90%;
+  margin:0 auto;
+  background-color:#ffffff;
+  padding:40px;
+  border-radius:4px;
+  color:#505e6c;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width:767px) {
+  #contact form {
+    padding:30px;
+  }
+}
+
+#contact h2 {
+  margin-top:5px;
+  font-weight:bold;
+  font-size:28px;
+  margin-bottom:36px;
+  color:inherit;
+}
+
+#contact .form-group:last-child {
+  margin-bottom:5px;
+}
+
+#contact form .form-control {
+  background:#fff;
+  border-radius:2px;
+  box-shadow:1px 1px 1px rgba(0,0,0,0.05);
+  outline:none;
+  color:inherit;
+  padding-left:12px;
+  height:42px;
+}
+
+#contact form .form-control:focus {
+  border:1px solid #b2b2b2;
+}
+
+#contact form textarea.form-control {
+  min-height:100px;
+  max-height:260px;
+  padding-top:10px;
+  resize:vertical;
+}
+
+#contact form .btn {
+  padding:16px 32px;
+  border:none;
+  background:none;
+  box-shadow:none;
+  text-shadow:none;
+  opacity:0.9;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:13px;
+  letter-spacing:0.4px;
+  line-height:1;
+  outline:none !important;
+}
+
+#contact form .btn:hover {
+  opacity:1;
+}
+
+#contact form .btn:active {
+  transform:translateY(1px);
+}
+
+#contact form .btn-primary {
+  background-color:#055ada !important;
+  margin-top:15px;
+  color:#fff;
+}
+
+.form-control {
+  margin-bottom:20px;
+}
+
+/*   Footer basic  */
+#footer-basic {
+  padding:40px 0;
+  background-color:rgb(163,163,163);
+  color:#4b4c4d;
+}
+
+#footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  margin-bottom:0;
 }
 
